@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import eu.hansolo.tilesfx.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<VBox alignment="TOP_CENTER" minHeight="720.0" minWidth="1280.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myispsux.MyIspSucksController">
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+  </padding>
+    <HBox alignment="TOP_CENTER" maxHeight="300">
+      <VBox>
+        <TilePane prefHeight="463.0" prefWidth="1000.0" alignment="TOP_CENTER" hgap="5">
+          <Tile fx:id="averagePingGauge" skinType="GAUGE" prefWidth="150" prefHeight="30" maxHeight="150"/>
+          <Tile fx:id="downloadSpeedGauge" skinType="GAUGE" prefWidth="150" prefHeight="30" maxHeight="150"/>
+          <Tile fx:id="uploadSpeedGauge" skinType="GAUGE" prefWidth="150" prefHeight="30" maxHeight="150"/>
+          <Tile fx:id="packetLossGauge" skinType="GAUGE" prefWidth="150" prefHeight="30" maxHeight="150"/>
+          <Tile fx:id="jitterGauge" skinType="GAUGE" prefWidth="150" prefHeight="30" maxHeight="150"/>
+        </TilePane>
+        <TilePane alignment="TOP_CENTER" hgap="5">
+          <Tile fx:id="averagePingKpi" skinType="CENTER_TEXT" prefWidth="125" prefHeight="30" maxHeight="125"/>
+          <Tile fx:id="minimumPingKpi" skinType="CENTER_TEXT" prefWidth="125" prefHeight="30" maxHeight="125"/>
+          <Tile fx:id="maximumPingKpi" skinType="CENTER_TEXT" prefWidth="125" prefHeight="30" maxHeight="125"/>
+          <Tile fx:id="packetLossKpi" skinType="CENTER_TEXT" prefWidth="125" prefHeight="30" maxHeight="125"/>
+          <Tile fx:id="jitterKpi" skinType="CENTER_TEXT" prefWidth="125" prefHeight="30" maxHeight="125"/>
+          <Tile fx:id="averageRouteLengthKpi" skinType="CENTER_TEXT" prefWidth="30" prefHeight="30" maxHeight="125"/>
+        </TilePane>
+      </VBox>
+      <Tile skinType="BAR_CHART" minWidth="400"/>
+    </HBox>
+</VBox>
